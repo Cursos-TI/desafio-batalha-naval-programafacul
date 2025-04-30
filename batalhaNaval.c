@@ -12,19 +12,18 @@ int main() {
     }
 
 
-    int linha_h = 2, coluna_h = 4; // Começa em C4
-    int linha_v = 5, coluna_v = 7; // Começa em F7
+    int linha_h = 4, coluna_h = 2; // Começa em C4
+    int linha_v = 2, coluna_v = 4; // Começa em F7
+
+    int navio_horizontal[5] = {7, 7, 7, 7, 7};
+    int navio_vertical[5] = {7, 7, 7, 7, 7};
 
 
-    int navio_horizontal[3] = {3, 3, 3};
-    int navio_vertical[3] = {3, 3, 3};
-
-
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 5; i++) {
         tabuleiro[linha_h][coluna_h + i] = navio_horizontal[i];
     }
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 5; i++) {
         tabuleiro[linha_v + i][coluna_v] = navio_vertical[i];
     }
 
